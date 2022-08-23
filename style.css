@@ -1,0 +1,124 @@
+* {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      font-family: 'Kanit', sans-serif;
+}
+
+body {
+      background-color: rgb(44, 44, 44);
+      background-image: url("img/car-background.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+}
+
+.parent {
+      background-color: rgba(0,0,0,.9);
+      /* border: 2px solid white; */
+      color: white;
+      width: 50%;
+      margin: 2% auto;
+      border-radius: 20px;
+      display: flex;
+      justify-content: space-between;
+}
+
+.parent > h2 {
+      text-align: center;
+}
+
+.container {
+      height: 100%;
+      text-align: center;
+      width: 100%;   
+}
+
+
+#hangman-bodypart {
+      border-radius: 20px;
+}
+
+#hangman-container {
+      margin: 0;
+}
+
+#input {
+      font-size : 2rem;
+      width : 100px;
+}
+
+#user-input {
+      font-size : 2rem;
+      width : 200px;
+}
+
+#warning,#hangman-text {
+      margin: 5px;
+}
+
+button {
+      font-size: 1.8rem;
+      border-radius : 10px;
+      border: 5px solid yellow;
+      background-color: black;
+      color: white;
+      transition: 0.2s;
+}
+
+button:hover {
+      background-color: yellow;
+      color: black;
+}
+
+.game-text {
+      font-size : 1.5rem;
+}
+
+#healthbar {
+      font-size: 1.5rem;
+      margin-top: 5px;
+}
+
+
+
+#warning {
+      color: rgb(207, 207, 66);
+}
+
+img {
+      width: 300px;
+}
+
+#check-letter {
+      margin-top: 20px;
+}
+
+#myWord-input {
+      font-size : 2rem;
+      width: 350px;
+      margin: 2rem 0;
+      text-align:center;
+}
+
+#freq-paragraph {
+      color : yellow;
+      font-size : 1.5rem;
+}
+
+.paragraph {
+      font-size : 2rem;
+      color : green;
+      visibility : hidden;
+}
+
+#users-container {
+      height: auto;
+      width: 300px;
+      border: 3px solid white;
+      border-radius: 20px;
+      display: inline-block;
+      align-self: center;
+      text-align: center;
+      overflow: hidden;
+      font-size: 1.2rem;
+}
