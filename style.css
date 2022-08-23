@@ -42,6 +42,10 @@ body {
       margin: 0;
 }
 
+input {
+      border-radius: 10px;
+}
+
 #input {
       font-size : 2rem;
       width : 100px;
@@ -50,6 +54,7 @@ body {
 #user-input {
       font-size : 2rem;
       width : 200px;
+      margin-bottom: 10px;
 }
 
 #warning,#hangman-text {
