@@ -1,44 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>HangMan</title>
-      <link rel="stylesheet" href="style.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;388&family=Roboto:wght@300&display=swap" rel="stylesheet">
-</head>
-<body>
-      <div class="parent">
-            <!--~ USERS CONTAINER -->
-            <div class="container" id="users-container"><h2>LEADERBOARD</h2></div>
-            <div class="container" id="hangman-container">
-                  <h1>HANGMAN WITH CARS 🚗🏎️🚘</h1>
-                  <br>
-                  <p id="game-text">Insert your name here:</p>
-                  <input type="text" id="user-input"/>
-                  <br>
-                  <button type="submit" onclick="getUserName()" id="store-username">STORE USERNAME</button>
-                  <p id="healthbar" class="game-text"></p>
-                  <div id="hangman-wrap">
-                        <p id="hangman-text" class="game-text"></p>
-                        <input type="text" id="input"/>
-                        <br>
-                        <button type="submit" onclick="hangMan()" id="check-letter">CHECK LETTER</button>
-                        <!-- <p id="hint" class="game-text"></p> -->
-                        <p id="warning" class="game-text"></p>
-                        <div id="hangman-container">
-                              <img src="img/CAR INIT.png" alt="hangman-body-part" id="hangman-bodypart">
-                        </div>
-                        <br>
-                        <p id="highscore-text" class="game-text"></p>
-                        <button onclick="resetGame()" id="reset-button">RESET GAME</button>
-                  </div>
-            </div>
-      </div>
-      <!--! <script src="script.js"></script> THIS IS THE OLD SCRIPT --> 
-      <script src="hang-man.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HangMan</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;388&family=Roboto:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="parent">
+			<!--~ USERS CONTAINER -->
+			<div class="container" id="users-container"><h2>LEADERBOARD</h2></div>
+			<div class="container" id="hangman-container">
+				<h1 class="main-title">HANGMAN WITH CARS 🚗🏎️🚘</h1>
+				<br />
+				<p id="game-text">Insert your name here:</p>
+				<input type="text" id="user-input" />
+				<br />
+				<button type="submit" onclick="getUserName()" id="store-username">
+					STORE USERNAME
+				</button>
+				<p id="healthbar" class="game-text"></p>
+				<div id="hangman-wrap">
+					<p id="hangman-text" class="game-text"></p>
+					<input type="text" id="input" />
+					<br />
+					<button type="submit" onclick="hangMan()" id="check-letter">
+						CHECK LETTER
+					</button>
+					<!-- <p id="hint" class="game-text"></p> -->
+					<p id="warning" class="game-text"></p>
+					<div id="hangman-container">
+						<img
+							src="img/CAR INIT.png"
+							alt="hangman-body-part"
+							id="hangman-bodypart"
+						/>
+					</div>
+					<br />
+					<p id="highscore-text" class="game-text"></p>
+					<button onclick="resetGame()" id="reset-button">RESET GAME</button>
+				</div>
+			</div>
+		</div>
+		<!--! <script src="script.js"></script> THIS IS THE OLD SCRIPT -->
+		<script src="hang-man.js"></script>
+	</body>
 </html>
