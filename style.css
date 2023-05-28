@@ -12,53 +12,16 @@ body {
 	background-repeat: no-repeat;
 }
 
-.parent {
-	background-color: rgba(0, 0, 0, 0.9);
-	/* border: 2px solid white; */
-	color: white;
-	width: 50%;
-	margin: 2% auto;
-	border-radius: 20px;
-	display: flex;
-	justify-content: space-between;
+h2 {
+	margin: 1rem;
 }
 
-.parent > h2 {
-	text-align: center;
-}
-
-.container {
-	height: 100%;
-	text-align: center;
-	width: 100%;
-}
-
-#hangman-bodypart {
-	border-radius: 20px;
-}
-
-#hangman-container {
-	margin: 0;
+img {
+	width: 300px;
 }
 
 input {
 	border-radius: 10px;
-}
-
-#input {
-	font-size: 2rem;
-	width: 100px;
-}
-
-#user-input {
-	font-size: 2rem;
-	width: 200px;
-	margin-bottom: 10px;
-}
-
-#warning,
-#hangman-text {
-	margin: 5px;
 }
 
 button {
@@ -75,43 +38,20 @@ button:hover {
 	color: black;
 }
 
-.game-text {
-	font-size: 1.5rem;
+.parent {
+	background-color: rgba(0, 0, 0, 0.9);
+	color: white;
+	width: 60%;
+	margin: auto;
+	border-radius: 20px;
+	display: flex;
+	justify-content: space-between;
 }
 
-#healthbar {
-	font-size: 1.5rem;
-	margin-top: 5px;
-}
-
-#warning {
-	color: rgb(207, 207, 66);
-}
-
-img {
-	width: 300px;
-}
-
-#check-letter {
-	margin-top: 20px;
-}
-
-#myWord-input {
-	font-size: 2rem;
-	width: 350px;
-	margin: 2rem 0;
+.container {
+	height: 100%;
 	text-align: center;
-}
-
-#freq-paragraph {
-	color: yellow;
-	font-size: 1.5rem;
-}
-
-.paragraph {
-	font-size: 2rem;
-	color: green;
-	visibility: hidden;
+	width: 100%;
 }
 
 #users-container {
@@ -126,19 +66,53 @@ img {
 	font-size: 1.2rem;
 }
 
+#user-input {
+	font-size: 2rem;
+	width: 200px;
+	margin-bottom: 10px;
+}
+
+.game-text {
+	font-size: 1.5rem;
+}
+
+#healthbar {
+	font-size: 1.5rem;
+	margin-top: 5px;
+}
+
+#warning,
+#hangman-text {
+	margin: 5px;
+}
+
+#input-letter {
+	font-size: 2rem;
+	width: 100px;
+}
+
+#check-letter {
+	margin-top: 20px;
+}
+
+#warning {
+	color: rgb(207, 207, 66);
+}
+
+#hangman-carState {
+	border-radius: 20px;
+}
+
 @media only screen and (max-width: 1000px) {
 	.parent {
 		display: flex;
 		flex-direction: column;
 	}
 	#users-container {
-		/* height: auto; */
 		width: 40vw;
 		border: 3px solid white;
 		border-radius: 20px;
 		display: block;
-		/* align-self: center; */
-		/* text-align: center; */
 		overflow: hidden;
 		font-size: 0.8rem;
 	}
@@ -150,23 +124,28 @@ img {
 }
 
 @media only screen and (max-width: 600px) {
-	#hangman-bodypart {
-		width: 30vw;
+	.parent {
+		width: 100vw;
+		min-height: 100vh;
 	}
+
+	h2 {
+		font-size: 0.8rem;
+	}
+
 	#user-input {
 		font-size: 2rem;
 		width: 30vw;
 		margin-bottom: 10px;
 	}
-	#users-container h2 {
-		font-size: 0.8rem;
-	}
+
 	#store-username {
 		width: 30vw;
 		word-wrap: normal;
 		font-size: 0.8rem;
 	}
-	.main-title {
-		font-size: 0.8rem;
+
+	#hangman-carState {
+		width: 30vw;
 	}
 }

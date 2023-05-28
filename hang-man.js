@@ -62,16 +62,16 @@ let warningText = document.getElementById("warning");
 let checkLetterButton = document.getElementById("check-letter");
 let resetButton = document.getElementById("reset-button");
 toggleVisibility(checkLetterButton);
-let currentImg = document.getElementById("hangman-bodypart");
+let currentImg = document.getElementById("hangman-carState");
 let highScoreVisible = document.getElementById("highscore-text");
 let usersContainer = document.getElementById("users-container");
 
 displayUserHighScores(getHighScores());
 
 function hangMan() {
-	let input = document.getElementById("input").value.toLowerCase();
-	document.getElementById("input").value = "";
-	document.getElementById("input").focus();
+	let input = document.getElementById("input-letter").value.toLowerCase();
+	document.getElementById("input-letter").value = "";
+	document.getElementById("input-letter").focus();
 	if (word.includes(input) && !word2Compare.includes(input)) {
 		word2Compare = correctInput(input, word2Compare);
 		console.log(word2Compare);
@@ -96,6 +96,7 @@ function hangMan() {
 }
 
 function resetGame() {
+	let input = document.getElementById("input-letter");
 	console.log(checkLetterButton.innerText);
 	word = words[Math.floor(Math.random() * words.length)].toLowerCase();
 	console.log(word);
@@ -227,16 +228,16 @@ function getUserName() {
 	toggleVisibility(resetButton);
 	console.log(playerName);
 	let userName = document.getElementById("user-input");
-	let gameText = document.getElementById("game-text");
+	let nameText = document.getElementById("name-text");
 	let userNameButton = document.getElementById("store-username");
 	toggleVisibility(userName);
 	toggleVisibility(userNameButton);
 	if (document.getElementById("user-input").value.length == 0) {
-		gameText.innerText = `You cannot leave the field empty! Please insert a player name`;
+		nameText.innerText = `You cannot leave the field empty! Please insert a player name`;
 		toggleVisibility(userName);
 		toggleVisibility(userNameButton);
 	} else {
-		gameText.innerText = `Current player : ${userName.value}`;
+		nameText.innerText = `Current player : ${userName.value}`;
 		toggleVisibility(resetButton);
 	}
 	return playerName;
